@@ -1,33 +1,14 @@
 # Métricas de Impacto Social: ONG Passos Mágicos
 
-Este projeto consiste em um sistema de métricas desenvolvido para quantificar e ilustrar o impacto social da ONG **Passos Mágicos** na comunidade de Embu-Guaçu. A solução utiliza uma arquitetura de baixo custo baseada em Power BI e processamento de dados em Python, permitindo a análise do desenvolvimento educacional, psicológico e socioeconômico de crianças e jovens assistidos sem a necessidade de investimentos adicionais em infraestrutura.
+Este projeto consiste em um sistema de métricas desenvolvido para quantificar e ilustrar o impacto social da ONG **Passos Mágicos** na comunidade de Embu-Guaçu. A solução utiliza uma arquitetura de baixo custo baseada em Power BI e processamento de dados em Python, permitindo a análise do desenvolvimento educacional, psicológico e socioeconômico de crianças e jovens assistidos.
 
 ### Pré-requisitos
 
 Certifique-se de ter Power BI Desktop instalado.
 
-### Instalação
-
-Siga os passos abaixo para configurar o ambiente e acessar os arquivos do projeto:
-
-```bash
-#clonar o repositório
-git clone https://github.com/jorgeplatero/postech_techchallenge_fase_5.git
-cd postech-data-analytics-fase-5-tech-challenge
-
-#criar o ambiente virtual
-python -m venv venv
-source venv/bin/activate 
-
-#instalar dependências
-pip install -r requirements.txt
-```
-
 ### Como Rodar a Aplicação
 
-Abra o arquivo `.pbix` localizado na pasta principal utilizando o Power BI Desktop.
-2.  Caso as fontes de dados (arquivos `.xlsx` e `.csv`) não sejam encontradas, ajuste o caminho das origens no **Power Query** para apontar para a pasta `/data` deste repositório.
-3.  Clique em "Atualizar" para popular o modelo associativo com os dados mais recentes.
+Abra o arquivo `.pbix` localizado na pasta principal utilizando o Power BI Desktop. Caso as fontes de dados não sejam encontradas, ajuste o caminho das origens no Power Query para apontar para a pasta `/data` deste repositório e atualize para popular o modelo de dados.
 
 ### Tecnologias
 
