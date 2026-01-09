@@ -1,34 +1,58 @@
-# Tech challenge da 5° fase da pós-graduação em Data Analytics da FIAP
+# Métricas de Impacto Social: ONG Passos Mágicos
 
-![logo do projeto](https://github.com/jorgeplatero/postech_techchallenge_fase_5/blob/9b93f678408eadd3a079a6cef9103eb34b54ae7f/img/passos_magicos_logo.png)
+Este projeto consiste em um sistema de métricas desenvolvido para quantificar e ilustrar o impacto social da ONG **Passos Mágicos** na comunidade de Embu-Guaçu. A solução utiliza uma arquitetura de baixo custo baseada em Power BI e processamento de dados em Python, permitindo a análise do desenvolvimento educacional, psicológico e socioeconômico de crianças e jovens assistidos sem a necessidade de investimentos adicionais em infraestrutura.
 
-## Descrição do Projeto
+### Pré-requisitos
 
-O objetivo deste projeto foi desenvolver um sistema de métricas que possa quantificar e ilustrar o impacto que a ONG "Passos Mágicos" tem tido sobre a comunidade que atende.
+Certifique-se de ter Power BI Desktop instalado.
 
-A Passos Mágicos, fundada em 1992 por Michelle Flues e Dimetri Ivanoff, tem uma trajetória de 30 anos dedicada à transformação da vida de crianças e jovens de baixa renda, oferecendo-lhes melhores oportunidades de vida. Inicialmente, a organização começou a operar em casas de acolhimento (antigos orfanatos) no município de Embu-Guaçu. Em 2016, a associação decidiu expandir seu programa para alcançar mais jovens, evoluindo para um projeto social e educacional mais abrangente. Hoje, a missão da Passos Mágicos é proporcionar uma educação de qualidade, auxílio psicológico e psicopedagógico, ampliação da visão de mundo e desenvolvimento do protagonismo dos jovens assistidos.
+### Instalação
 
-Este projeto consiste em um dashboard desenvolvido no Power BI que permite com que a Passos Mágicos continue sua missão de forma otimizada no que diz respeito a análise dos dados gerados em suas atividades. Para tal, optamos por uma abordagem que não requer investimentos adicionais em infraestrutura, banco de dados, licenças ou novos colaboradores: o Power BI, que atualmente já é empregada pela Passos Mágicos - o que permite uma aproximação suavizada entre seus colaboradores e a aplicação. Optamos por trabalhar com arquivos .xlsx e .csv e, para facilitar a atualização dos dados, criamos modelos de planilhas onde as informações podem ser preenchidas e atualizadas com maior dinamismo.
+Siga os passos abaixo para configurar o ambiente e acessar os arquivos do projeto:
 
-## Fonte de Dados
+```bash
+#clonar o repositório
+git clone https://github.com/jorgeplatero/postech_techchallenge_fase_5.git
+cd postech-data-analytics-fase-5-tech-challenge
 
-Os dados utilizados neste projeto foram em sua maior parte fornecidos pela ONG, outros adviram do site da instituição e também do IBGE, podendo ser consultados no repositório.
+#criar o ambiente virtual
+python -m venv venv
+source venv/bin/activate 
 
-## Tecnologias Utilizadas
+#instalar dependências
+pip install -r requirements.txt
+```
 
-<img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg' width='50' height='50'/>
-<img src='https://avatars.githubusercontent.com/u/42988494?s=200&v=4' width='50' height='50'/>
+### Como Rodar a Aplicação
 
-## Links para as Aplicações
+Abra o arquivo `.pbix` localizado na pasta principal utilizando o Power BI Desktop.
+2.  Caso as fontes de dados (arquivos `.xlsx` e `.csv`) não sejam encontradas, ajuste o caminho das origens no **Power Query** para apontar para a pasta `/data` deste repositório.
+3.  Clique em "Atualizar" para popular o modelo associativo com os dados mais recentes.
 
-Dashboard Power BI: <a style='text-decoration:none;' href='https://app.powerbi.com/view?r=eyJrIjoiMTkzNjNlNGEtY2JjYy00OGRmLTgyMzItZDk5NmRlZjI0MDVkIiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9' target='_blank'>link</a>.
+### Tecnologias
 
-## Colaboradores
+| Componente | Tecnologia | Versão | Descrição |
+| :--- | :--- | :--- | :--- |
+| **Plataforma BI** | **Power BI** | `-` | Plataforma de BI para desenvolvimento de dashboards |
+| **Análise de Dados** | **Pandas** | `2.2.2` | Biblioteca para manipulação de dados |
+| **Linguagem** | **Python** | `>=3.11` | Linguagem para desenvolvimento de scripts |
 
-https://github.com/mateus-albuquerque
+### Fonte de Dados
 
-https://github.com/adriellytsilva
+Os indicadores foram construídos com base em dados cedidos pela ONG Passos Mágicos, informações institucionais e dados demográficos do IBGE. As bases estão disponíveis neste repositório.
 
-https://github.com/VictorReisDev
+### Deploy
 
-https://github.com/EricaBassan
+O dashboard está disponível via Power BI Service.
+
+Link para o dashboard: https://app.powerbi.com/view?r=eyJrIjoiMTkzNjNlNGEtY2JjYy00OGRmLTgyMzItZDk5NmRlZjI0MDVkIiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9
+
+### Colaboradores
+
+[Mateus Albuquerque](https://github.com/mateus-albuquerque)
+
+[Adrielly Silva](https://github.com/adriellytsilva)
+
+[Victor Reis](https://github.com/VictorReisDev)
+
+[Erica Bassan](https://github.com/EricaBassan)
