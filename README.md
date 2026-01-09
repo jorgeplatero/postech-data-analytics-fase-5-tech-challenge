@@ -8,7 +8,14 @@ Certifique-se de ter Power BI Desktop instalado.
 
 ### Como Rodar a Aplicação
 
-Abra o arquivo `.pbix` localizado na pasta principal utilizando o Power BI Desktop. Caso as fontes de dados não sejam encontradas, ajuste o caminho das origens no Power Query para apontar para a pasta `/data` deste repositório e atualize para popular o modelo de dados.
+Clone o repositório ou baixe o arquivo .pbix:
+
+```bash
+#clonar o repositório
+git clone https://github.com/jorgeplatero/postech-data-analytics-fase-5-tech-challenge.git
+```
+
+Abra o arquivo `.pbix` localizado na pasta principal utilizando o Power BI Desktop. Certifique-se de ajustar as conexões de dados para apontar para o diretório de dados deste repositório e carregue os dados para processar o script e popular o modelo de dados.
 
 ### Tecnologias
 
